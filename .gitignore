@@ -9,6 +9,7 @@ __pycache__/
 # Terraform
 tfplan
 .terraform
+terraform/builds
 
 # Distribution / packaging
 .Python
