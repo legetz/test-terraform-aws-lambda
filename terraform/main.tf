@@ -14,11 +14,6 @@ terraform {
   required_version = "~> 1.4.6"
 }
 
-module "lambda" {
-  source  = "terraform-aws-modules/lambda/aws"
-  version = "4.18.0"
-}
-
 provider "aws" {
   region      = "eu-west-1"
   max_retries = 1
