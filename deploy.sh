@@ -10,7 +10,7 @@ if [[ "$ENVIRONMENT" =~ ^(dev|prod)$ ]]; then
     rm -f tfplan
     terraform init -reconfigure -backend-config=${ENVIRONMENT}/backend.tf
     terraform plan -var-file=${ENVIRONMENT}/variables.tfvars -out=tfplan
-    #terraform apply "tfplan"
+    terraform apply "tfplan"
 else
     echo "ERROR: Specify environment dev/prod" >&2
     exit 1;
